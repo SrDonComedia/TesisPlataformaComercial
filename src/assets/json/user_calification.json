@@ -1,0 +1,103 @@
+{
+    "califications": [
+        {
+            "Id": "0",
+            "name": "Miguel Parrón vazquez",
+            "user_calificator_id": "0",
+            "user_calificated_id": "1",
+            "calification": "3",
+            "tittle": "Mejora la atención",
+            "comment": "Me gustan mucho la comida que prepara pero podría mejorar un poco el trato hacia las personas o ser un poco más cálido "
+        },
+        {
+            "Id": "1",
+            "name": "Miguel Zegovia Duran",
+            "user_calificator_id": "1",
+            "user_calificated_id": "2",
+            "calification": "4",
+            "tittle": "Buena atención",
+            "comment": "Muy simpatica y amable, lo unico malo es que llegó un poco tarde a la hora que nos juntaríamos y eso me hizo perder un bus "
+        },
+        {
+            "Id": "2",
+            "name": "Trinidad Elmeida Granhe",
+            "user_calificator_id": "2",
+            "user_calificated_id": "3",
+            "calification": "5",
+            "tittle": "Excelente servicio",
+            "comment": "Me encantaron las vibras que tiene, siempre muy sonriente y amigable en todo momento, ademas de atento "
+        },
+        {
+            "Id": "3",
+            "name": "Daniel de la Cruz",
+            "user_calificator_id": "3",
+            "user_calificated_id": "4",
+            "calification": "2",
+            "tittle": "Antipatica",
+            "comment": "Es un poco pesada o antipatica aunque realmente tiene buenos productos "
+        },
+        {
+            "Id": "4",
+            "name": "Erica Jackson",
+            "user_calificator_id": "4",
+            "user_calificated_id": "5",
+            "calification": "1",
+            "tittle": "Mala venta",
+            "comment": "Una persona muy prepotente para dar sus clases, no la recomiendo para nada "
+        },
+        {
+            "Id": "5",
+            "name": "Marlen Presley",
+            "user_calificator_id": "5",
+            "user_calificated_id": "0",
+            "calification": "3",
+            "tittle": "Algo grosero",
+            "comment": "Cuida un poco más tu lenguaje a la hora de hablar con las personas, fuera de eso todo bien "
+        },
+        {
+            "Id": "6",
+            "name": "Miguel Parrón vazquez",
+            "user_calificator_id": "0",
+            "user_calificated_id": "2",
+            "calification": "5",
+            "tittle": "Me encantó",
+            "comment": "Un amor de persona, adore la forma en que me ayudo cuando elegi el telefono, muchas gracias! "
+        },
+        {
+            "Id": "7",
+            "name": "Miguel Parrón vazquez",
+            "user_calificator_id": "0",
+            "user_calificated_id": "3",
+            "calification": "4",
+            "tittle": "Recomendado",
+            "comment": "Una persona preciosa en todo sentido, muy recomendado "
+        },
+        {
+            "Id": "8",
+            "name": "Miguel Zegovia Duran",
+            "user_calificator_id": "1",
+            "user_calificated_id": "0",
+            "calification": "2",
+            "tittle": "Algo impaciente",
+            "comment": "Buenos productos pero te apresura demasiado para que elijas que es lo que quieres llevar "
+        },
+        {
+            "Id": "9",
+            "name": "Trinidad Elmeida Granhe",
+            "user_calificator_id": "2",
+            "user_calificated_id": "0",
+            "calification": "5",
+            "tittle": "Eficiente",
+            "comment": "Me gustó mucho la atención, bastante rapida y eficiente "
+        },
+        {
+            "Id": "10",
+            "name": "Marlen Presley",
+            "user_calificator_id": "5",
+            "user_calificated_id": "1",
+            "calification": "2",
+            "tittle": "Malos tratos",
+            "comment": "Mala forma de hablar hacia las personas con las que estas tratando"
+        }
+    ]
+}

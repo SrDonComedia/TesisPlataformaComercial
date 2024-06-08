@@ -1,0 +1,65 @@
+<!-- Formulario de búsqueda -->
+
+<mat-form-field class="example-full-width" style="display: block;">
+    <mat-label>Buscar</mat-label>
+    <input matInput placeholder="Ingrese su búsqueda" [(ngModel)]="searchText" (input)="filterProducts(selectedCategory)">
+    <mat-icon matSuffix>search</mat-icon>
+</mat-form-field>
+
+<div class="example-button-row" style="margin-bottom: 10px;">
+    <button mat-flat-button extended color="primary" class="buton-type" style="margin-top: 5px;" 
+            [class.active]="isButtonActive == 'todos'" (click)="toggleButton('todos')">
+        <mat-icon style="margin-right: 2px;">dashboard</mat-icon>Todos
+    </button>
+    <button mat-flat-button extended color="primary" class="buton-type" style="margin-top: 5px;" 
+            [class.active]="isButtonActive == 'electronico'" (click)="toggleButton('electronico')">
+        <mat-icon style="margin-right: 2px;">phone_android</mat-icon>Electronico
+    </button>
+    <button mat-flat-button extended color="primary" class="buton-type" style="margin-top: 5px;" 
+            [class.active]="isButtonActive == 'comida'" (click)="toggleButton('comida')">
+        <mat-icon style="margin-right: 2px;">fastfood</mat-icon>Comida
+    </button>
+    <button mat-flat-button extended color="primary" class="buton-type" style="margin-top: 5px;" 
+            [class.active]="isButtonActive == 'entretenimiento'" (click)="toggleButton('entretenimiento')">
+        <mat-icon style="margin-right: 2px;">flight_takeoff</mat-icon>Entretenimiento
+    </button>
+    <button mat-flat-button extended color="primary" class="buton-type" style="margin-top: 5px;" 
+            [class.active]="isButtonActive == 'automocion'" (click)="toggleButton('automocion')">
+        <mat-icon style="margin-right: 2px;">drive_eta</mat-icon>Automoción
+    </button>
+    <button mat-flat-button extended color="primary" class="buton-type" style="margin-top: 5px;" 
+            [class.active]="isButtonActive == 'salud'" (click)="toggleButton('salud')">
+        <mat-icon style="margin-right: 2px;">brush</mat-icon>Salud y belleza
+    </button>
+    <button mat-flat-button extended color="primary" class="buton-type" style="margin-top: 5px;" 
+            [class.active]="isButtonActive == 'servicio'" (click)="toggleButton('servicio')">
+        <mat-icon style="margin-right: 2px;">business_center</mat-icon>Servicios
+    </button>
+</div>
+
+<br>
+
+<!-- MUESTRA DE PRODCUTOS DISPONIBLES -->
+<div style="display: grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr));gap: 24px;">
+    <mat-card class="matcard-hover" *ngFor="let producto of filteredProducts()?.productos; let i = index" matRipple>
+        <mat-card-header class="matcard-header-hover" style="cursor: pointer;" (click)="redirectToUsersPage(array_users.users[getUserIndex(producto.user_id)])">
+            <div mat-card-avatar class="example-header-image">
+                <img mat-card-image src="../../assets/img/avatars/1-small.png"
+                    [src]="'../../assets/img/avatars/'+getUserIndex(producto.user_id)+'-small.png'"
+                    alt="Photo of a Shiba Inu" style="width: 40px;height:40px;margin:0;border-radius: 50%;">
+            </div>
+            <mat-card-title>
+                {{ array_users.users[getUserIndex(producto.user_id)].name }}
+            </mat-card-title>
+            <mat-card-subtitle>{{ array_users.users[getUserIndex(producto.user_id)].carrera }}</mat-card-subtitle>
+        </mat-card-header>
+        <img style="cursor: pointer;" (click)="redirectToProductsPage(producto)" mat-card-image [src]="'../../../assets/img/uikit/'+producto.image+'.jpg'" alt="Description of the image">
+        <mat-card-content>
+            <mat-card-title>{{producto.name}}</mat-card-title>
+            <p>
+                {{producto.description}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>
+<!-- FIN DE PRODUCTOS DISPONIBLES -->

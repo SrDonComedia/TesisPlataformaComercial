@@ -1,0 +1,81 @@
+<div class="authentication-wrapper authentication-3">
+    <div class="authentication-inner">
+
+        <!-- Side container -->
+        <div class="d-none d-lg-flex col-lg-8 col-xl-9 align-items-center ui-bg-cover ui-bg-overlay-container p-5"
+            style="background-image: url('assets/img/uft/background-uft.png');">
+            <div class="ui-bg-overlay bg-dark opacity-50"></div>
+
+            <div class="row justify-content-center w-100">
+                <div class="col-sm-12">
+                    <!-- Text -->
+                    <div class="w-100 text-white px-5">
+                        <span _ngcontent-xlo-c2="" class="display-2  mb-4 title-login">
+                            <strong _ngcontent-xlo-c2="">PORTAL</strong>
+                            <br _ngcontent-xlo-c2="">INTERCAMBIO COMERCIAL ESTUDIANTIL
+                        </span>
+                    </div>
+                    <!-- /.Text -->
+                </div>
+                <div class="col-sm-12" *ngIf="false">
+                    <!-- swiper -->
+                    <ngb-carousel [interval]="5000" [pauseOnHover]="true" [showNavigationArrows]="true"
+                        [showNavigationIndicators]="true">
+                        <ng-template ngbSlide>
+                            <img class="d-block w-100" src="assets/img/bg/2.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Second slide</h3>
+                                <p>In numquam omittam sea.</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <img class="d-block w-100" src="assets/img/bg/3.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Third slide</h3>
+                                <p>Lorem ipsum dolor sit amet, virtute consequat ea qui, minim graeco mel no.</p>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                    <!-- /swiper -->
+                </div>
+            </div>
+
+
+        </div>
+        <!-- / Side container -->
+
+        <!-- Form container -->
+        <div class="theme-bg-white-uft-responsive d-flex col-lg-4 col-xl-3 align-items-center p-5">
+            <div class="d-flex col-sm-9 col-md-6 col-lg-12 px-0 px-xl-3 mx-auto" style="max-width: 400px;">
+                <div class="w-100 form-login-responsive">
+
+                    <!-- Logo -->
+                    <div class="d-flex justify-content-center align-items-center pb-2 mb-2">
+                        <div class="w-100 position-relative">
+                            <img src="assets/img/uft/logo.png" class="img-fluid">
+                        </div>
+                    </div>
+                    <!-- / Logo -->
+
+                    <ng-container *ngIf="showLoginComponent">
+                        <!-- Login -->
+                        <app-login-form></app-login-form>
+                        <div class="text-center text-muted">
+                            Debes entrar con tu rut y contraseña de Terrae (Sin puntos
+                            ni guión, ej. 12.345.678-0 se debe
+                            ingresar 123456780)
+                            <br>
+                            <br>
+                            Si no recuerda su clave entrar a <a href="https://miclave.uft.cl">Mi Clave</a>
+                            <br>
+                            <br>
+                        </div>
+                        <!-- / Login -->
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+        <!-- / Form container -->
+
+    </div>
+</div>

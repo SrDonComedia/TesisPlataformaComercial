@@ -1,0 +1,168 @@
+{
+    "modulos": [
+        {
+            "id": "ingreso",
+            "name": "ingreso",
+            "active": true,
+            "preguntas": [
+                {
+                    "numero": "1. ",
+                    "open": false,
+                    "pregunta": "No puedo recuperar la clave",
+                    "respuesta": "<ul> <li>Si no le ha llegado el correo filtre por el asunto \"Recuperación de clave\" o por el remitente webpay@uft.cl</li> <li>Revise su bandeja de spam</li> <li>Revise que su bandeja de entrada no esté llena</li> <li>Si con los pasos anteriores el correo aún no le ha llegado, debe llenar el siguiente <a href=\"https://forms.gle/9KgESXY8tR9TgK48A\" target=\"_blank\">formulario</a> para revisar con más detalle su problema. </li> </ul>"
+                },
+                {
+                    "numero": "2. ",
+                    "open": false,
+                    "pregunta": "No puedo ingresar al sistema",
+                    "respuesta": "<ul><li>Si al ingresar al sistema le indica \"Usuario o clave incorrectas\" intente recuperar su clave presionando <a href=\"https://portalpago.uft.cl\" target=\"_blank\">¿Olvidó su clave?</a> </li></ul>"
+                },
+                {
+                    "numero": "3. ",
+                    "open": false,
+                    "pregunta": "Quiero cambiar mi correo",
+                    "respuesta": "<ul><li><strong>Opción valida solo para estudiantes</strong> <ul><li>Si desea cambiar su correo de acceso al portal de pago, ingrese al siguiente enlace: <a href=\"https://portalpago.uft.cl\" target=\"_blank\">Cambiar mi correo</a></li> <li>Al realizar el cambio, su nuevo correo de acceso al portal de pago será su correo institucional (uft.edu)</li></ul></li><li>Si desea cambiar su correo de ingreso al portal de pago por otro que no sea el correo institucional (uft.edu), debe completar el siguiente <a href=\"https://forms.gle/9KgESXY8tR9TgK48A\" target=\"_blank\">formulario</a>.</li></ul> "
+                }
+            ]
+        },
+        {
+            "id": "registro",
+            "name": "Registro",
+            "active": false,
+            "preguntas": [
+                {
+                    "numero": "1. ",
+                    "open": false,
+                    "pregunta": "El sistema indica que mi RUT y/o email ya está registrado",
+                    "respuesta": "<ul><li>Si usted es alumno y se matriculó por el portal de “Matrícula en línea” intente ingresar con el usuario y clave enviados al correo de bienvenida (puede filtrar por el remitente mol@uft.edu o ingresar con el correo que usó para matricularse en línea. </li> <li>Si usted cree que alguien ha suplantado su identidad debe completar el siguiente <a href=\"https://forms.gle/9KgESXY8tR9TgK48A\" target=\"_blank\">formulario</a></li></ul>"
+                }
+            ]
+        },
+        {
+            "id": "cuota",
+            "name": "cuotas",
+            "active": false,
+            "preguntas": [
+                {
+                    "numero": "1. ",
+                    "open": false,
+                    "pregunta": "Mi cuota se está procesando",
+                    "respuesta": "<p>Esto sucede cuando hemos recibido su pago pero su cuota no se ha marcado aún como pagada, si esto continúa después de 2 días hábiles, debe envíar un email a <a href=\"mailto:portal-pago-matricula@uft.cl\">portal-pago-matricula@uft.cl</a> e indicarle que su cuota se está procesando. </p>"
+                },
+                {
+                    "numero": "2. ",
+                    "open": false,
+                    "pregunta": "Mi pago de cuota ha fallado",
+                    "respuesta": "<ul><li>El error más común es porque monto supera al máximo permitido por su banco para una tarjeta débito.</li><li>Si el pago aún continúa fallando solicitar ayuda a <a href=\"mailto:portal-pago-matricula@uft.cl\">portal-pago-matricula@uft.cl</a> <li></ul>"
+                }
+            ]
+        },
+        {
+            "id": "certificado",
+            "name": "certificados",
+            "active": false,
+            "preguntas": [
+                {
+                    "numero": "1. ",
+                    "open": false,
+                    "pregunta": "El certificado no puede ser seleccionado, debido a que el alumno no cuenta con un programa de estudios que califique para la obtención del certificado",
+                    "respuesta": "Debe comunicarse con su escuela para que regularicen su situación académica o enviar un email a <a href=\"mailto:portalcertificados@uft.cl\">portalcertificados@uft.cl</a>."
+                },
+                {
+                    "numero": "2. ",
+                    "open": false,
+                    "pregunta": "Solicité mi certificado de programa de estudios, ¿Que hago ahora?",
+                    "respuesta": "Para iniciar el proceso de elaboración del certificado de programa de estudios es requerido que presentes en tu escuela el comprobante de pago y le notifiques que solicitaste el programa de estudio. Cualquier otra duda la puede contultar a <a href=\"mailto:portalcertificados@uft.cl\">portalcertificados@uft.cl</a>"
+                },
+                {
+                    "numero": "3. ",
+                    "open": false,
+                    "pregunta": "Mi certificado aún no me ha llegado",
+                    "respuesta": "<p>Recuerde que el envío de certificados tiene un plazo de entrega de 5 días hábiles, si usted no ha recibido el certificado posterior a este plazo, debe envíar un correo a <a href=\"mailto:portalcertificados@uft.cl\">portalcertificados@uft.cl</a>.</p>"
+                },
+                {
+                    "numero": "4. ",
+                    "open": false,
+                    "pregunta": "El certificado enviado no cumple con lo requerido o comentado.",
+                    "respuesta": "Si su certificado no cumple con lo requerido, debe envíar un correo a <a href=\"mailto:portalcertificados@uft.cl\">portalcertificados@uft.cl</a> para que gestionen su caso."
+                },
+                {
+                    "numero": "5. ",
+                    "open": false,
+                    "pregunta": "El alumno no tiene programas asociados.",
+                    "respuesta": "Usted debe dirigirse con su escuela e indicarles que el sistema le indica que no tiene programas, su escuela debería revisar si está todo correcto con su plan de estudios y curricula."
+                }
+            ]
+        },
+        {
+            "id": "curso",
+            "name": "cursos",
+            "active": false,
+            "preguntas": [
+                {
+                    "numero": "1. ",
+                    "open": false,
+                    "pregunta": "No hay cursos disponibles",
+                    "respuesta": "Si usted no tiene cursos disponibles debe contactarse con tu ejecutivo o con su escuela para que le habilite el curso o le haga entrega del código asociado al curso."
+                },
+                {
+                    "numero": "2. ",
+                    "open": false,
+                    "pregunta": "Se ha producido un error al momento de guardar su información.",
+                    "respuesta": "Si el sistema arroja un error posterior al ingreso de sus datos en el formulario de inscripción, debe completar el siguiente <a href=\"https://forms.gle/9KgESXY8tR9TgK48A\" target=\"_blank\">formulario</a>, de ser posible, adjutando la evidencia correspondiente."
+                }
+            ]
+        },
+        {
+            "id": "examen-grado",
+            "name": "Examen de grado",
+            "active": false,
+            "preguntas": [
+                {
+                    "numero": "1. ",
+                    "open": false,
+                    "pregunta": "No se encontraron exámenes de grado que pueda pagar",
+                    "respuesta": "Usted debe contactarse con su escuela e indicarle que no está habilitado para pagar el examen de grado."
+                }
+            ]
+        },
+        {
+            "id": "tne",
+            "name": "TNE",
+            "active": false,
+            "preguntas": [
+                {
+                    "numero": "1. ",
+                    "open": false,
+                    "pregunta": "Al intentar pagar un pase nuevo o la revalidación del mismo me aparece un mensaje que dice \"El rut del usuario no está habilitado para realizar el pago de la TNE\".",
+                    "respuesta": "Usted debe contactarse con pasefinis@uft.cl e indicar que no se encuentra habilitado para el pago."
+                },
+                {
+                    "numero": "2. ",
+                    "open": false,
+                    "pregunta": "Pagué la renovación de la TNE, lo pasé por un tótem 7 días hábiles después y no se ha revalidado.",
+                    "respuesta": "Usted debe contactarse con pasefinis@uft.cl o dirigirse a la DAE y consultar por la situación de su TNE."
+                },
+                {
+                    "numero": "3. ",
+                    "open": false,
+                    "pregunta": "El rut del usuario no está habilitado para realizar el pago de la TNE.",
+                    "respuesta": "<ul><li>El pago de la TNE solo estará habilitado si usted es alumno regular, si no está habilitado, debe enviar un email a pasefinis@uft.cl pidiendo habilitación para pagar la TNE. </li><li> Si usted es apoderado y desea pagar la TNE de su hijo(a), el proceso ideal es que el alumno se registré en el portal de pago.</li></ul>"
+                }
+            ]
+        },
+        {
+            "id": "error",
+            "name": "Errores",
+            "active": false,
+            "preguntas": [
+                {
+                    "numero": "1. ",
+                    "open": false,
+                    "pregunta": "Se produjo un error inesperado al intentar obtener los datos del alumno en banner",
+                    "respuesta": "Si el rut ingresado es de un alumno, debe dirigirte con su escuela. Su escuala debe verificar que usted tenga configurado: <ul><li>Nombre</li><li>Apellidos</li><li>Email personal</li><li>Email institucional</li></ul>"
+                }
+            ]
+        }
+    ]
+}

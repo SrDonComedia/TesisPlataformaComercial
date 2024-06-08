@@ -1,0 +1,83 @@
+<p class="text-center text-uft font-weight-normal mt-4 mb-0" style="font-size: 16;">
+    Formulario de registro
+</p>
+
+<!-- Form -->
+<form class="my-4" [formGroup]="formularioRegistro">
+
+    <label class="form-label pb-1"><strong> Tipo documento</strong></label> <br>
+
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" (change)="cambiarTipoDocumento('RUN')" name="tipoDocumento"
+            id="radioRut" value="RUN" checked>
+        <label class="form-check-label" for="radioRut">&nbsp;RUN</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" (change)="cambiarTipoDocumento('PASAPORTE')" name="tipoDocumento"
+            id="radioPasaporte" value="PASAPORTE">
+        <label class="form-check-label" for="radioPasaporte">&nbsp;PASAPORTE</label>
+    </div>
+
+    <div class="form-group mt-2">
+        <label class="form-label">{{tipoDocumento}}</label>
+        <input [placeholder]="placeholderTipoDocumento" formControlName="rut" name="rut" type="input"
+            [ngClass]="{'is-invalid': formularioRegistro.controls['rut'].touched && formularioRegistro.controls['rut'].invalid}"
+            class="form-control form-sm">
+
+        <small class="invalid-feedback">
+            <p
+                *ngIf="formularioRegistro.controls['rut'].errors?.required && formularioRegistro.controls['rut'].touched">
+                Campo obligatorio
+            </p>
+            <p
+                *ngIf="formularioRegistro.controls['rut'].errors?.rutValido && formularioRegistro.controls['rut'].touched">
+                Run inválido
+            </p>
+        </small>
+    </div>
+
+
+
+    <div class="form-group">
+        <label class="form-label">Nombre</label>
+        <input formControlName="nombre" name="nombre" type="text" class="form-control form-sm"
+            [ngClass]="{'is-invalid': formularioRegistro.controls['nombre'].touched && formularioRegistro.controls['nombre'].invalid}">
+        <small class="invalid-feedback" *ngIf="formularioRegistro.controls['nombre'].touched">
+            <p *ngIf="formularioRegistro.controls['nombre'].errors?.required ">
+                Campo obligatorio
+            </p>
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Apellidos</label>
+        <input formControlName="apellidos" name="apellidos" type="text" class="form-control form-sm"
+            [ngClass]="{'is-invalid': formularioRegistro.controls['apellidos'].touched && formularioRegistro.controls['apellidos'].invalid}">
+        <small class="invalid-feedback" *ngIf="formularioRegistro.controls['apellidos'].touched">
+            <p *ngIf="formularioRegistro.controls['apellidos'].errors?.required ">
+                Campo obligatorio
+            </p>
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Email</label>
+        <input formControlName="username" name="email" type="text" class="form-control form-sm"
+            [ngClass]="{'is-invalid': formularioRegistro.controls['username'].touched && formularioRegistro.controls['username'].invalid}">
+        <small class="invalid-feedback" *ngIf="formularioRegistro.controls['username'].touched">
+            <p *ngIf="formularioRegistro.controls['username'].errors?.required ">
+                Campo obligatorio
+            </p>
+        </small>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center m-0">
+
+        <button type="button" class="btn btn-primary" (click)="registrar()">
+
+            <app-text-btn [loading]="loading" [pogressbar]="true" textLoaded="Registrarme" textLoading="Registrando">
+            </app-text-btn>
+        </button>
+    </div>
+</form>
+<!-- / Form -->

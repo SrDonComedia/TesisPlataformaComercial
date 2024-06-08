@@ -1,0 +1,1 @@
+![logo-uft-full.svg](/uploads/00e0a24d6dd34f1d975db4eee70e1b25/logo-uft-full.svg)

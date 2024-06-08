@@ -1,0 +1,58 @@
+{
+    "users": [
+        {
+            "id": "0",
+            "name": "Miguel Parrón vazquez",
+            "user": "204536864",
+            "password": "contraseñaHash",
+            "calification": "5",
+            "carrera": "Artes",
+            "description":"Soy un estudiante apasionado de artes visuales, explorando la vasta paleta de expresiones creativas que el mundo artístico tiene para ofrecer. Mi jornada académica es un viaje continuo entre la teoría del arte y la práctica, donde experimento con diversos medios para dar vida a mis ideas. Desde la pintura hasta la fotografía, encuentro inspiración en la intersección de la imaginación y la técnica. Mi enfoque va más allá de los lienzos convencionales, buscando trascender las fronteras de lo visual para transmitir mensajes profundos y provocar emociones a través de mis creaciones artísticas."
+        },
+        {
+            "id": "1",
+            "name": "Miguel Zegovia Duran",
+            "user": "204536864",
+            "password": "contraseñaHash",
+            "calification": "4",
+            "carrera": "Gastronomía Internacional",
+            "description":"Soy un apasionado estudiante de gastronomía internacional, cuyos sentidos se despiertan ante la diversidad de sabores y técnicas culinarias de todo el mundo. Mi búsqueda constante de nuevos conocimientos me lleva a explorar las raíces culturales de cada plato, fusionando ingredientes y tradiciones para crear experiencias gastronómicas únicas. En el aula, me sumerjo en la teoría culinaria, pero mi verdadera cocina es el mundo, donde experimento con recetas auténticas y descubro la riqueza de la alimentación global."
+        },
+        {
+            "id": "2",
+            "name": "Trinidad Elmeida Granhe",
+            "user": "204536864",
+            "password": "contraseñaHash",
+            "calification": "3",
+            "carrera": "Medicina",
+            "description":"Como estudiante de medicina, mi viaje académico es una inmersión profunda en la anatomía, la fisiología y la atención médica. Mi dedicación a la salud y el bienestar se refleja en mi compromiso con el estudio constante, la empatía hacia los pacientes y la comprensión de las complejidades del cuerpo humano. Si bien las horas de estudio son intensas, también valoro la importancia de la práctica clínica y el trabajo en equipo para aplicar mis conocimientos de manera efectiva en el campo de la medicina."
+        },
+        {
+            "id": "3",
+            "name": "Daniel de la Cruz",
+            "user": "204536864",
+            "password": "contraseñaHash",
+            "calification": "2",
+            "carrera": "Teatro",
+            "description":"Soy un estudiante de teatro con una pasión desenfrenada por la expresión artística. Mi vida gira en torno a explorar las emociones, los personajes y las narrativas a través de la actuación. En el aula, encuentro la magia en las técnicas teatrales y la interpretación, pero mi verdadero escenario es donde la vida se convierte en una obra. Busco constantemente nuevas formas de expresión, desde la improvisación hasta la exploración de clásicos y contemporáneos, para descubrir mi voz única en el vasto mundo del teatro."
+        },
+        {
+            "id": "4",
+            "name": "Erica Jackson",
+            "user": "204536864",
+            "password": "contraseñaHash",
+            "calification": "1",
+            "carrera": "Teatro",
+            "description":"Soy un estudiante de teatro con una pasión desenfrenada por la expresión artística. Mi vida gira en torno a explorar las emociones, los personajes y las narrativas a través de la actuación. En el aula, encuentro la magia en las técnicas teatrales y la interpretación, pero mi verdadero escenario es donde la vida se convierte en una obra. Busco constantemente nuevas formas de expresión, desde la improvisación hasta la exploración de clásicos y contemporáneos, para descubrir mi voz única en el vasto mundo del teatro."
+        },
+        {
+            "id": "5",
+            "name": "Marlen Presley",
+            "user": "204536864",
+            "password": "contraseñaHash",
+            "calification": "0",
+            "carrera": "Ingeniería Civil",
+            "description":"Como estudiante de ingeniería civil, mi mente está enfocada en construir el futuro a través del diseño y la construcción de estructuras sólidas. Cada día, me sumerjo en la teoría y la aplicación práctica de la ingeniería, abordando desafíos que van desde la planificación de proyectos hasta la gestión de recursos. Mi pasión por la ingeniería se refleja en mi habilidad para resolver problemas complejos y mi deseo de contribuir a la creación de entornos seguros y sostenibles. Cada proyecto es un rompecabezas que ansío resolver para dar forma al mundo que nos rodea."
+        }
+    ]
+}

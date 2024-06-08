@@ -1,0 +1,50 @@
+<p class="text-center text-uft font-weight-normal mt-4 mb-0" style="font-size: 16;">Ingresa a tu portal de intercambio comercial
+</p>
+
+<!-- Form -->
+<form class="my-4" [formGroup]="formularioLogin">
+
+    <div class="form-group">
+        <label class="form-label">Usuario</label>
+        <input placeholder="Usuario" formControlName="rut" name="rut" type="input"
+            [ngClass]="{'is-invalid': formularioLogin.controls['rut'].touched && formularioLogin.controls['rut'].invalid}"
+            class="form-control form-sm">
+
+        <small class="invalid-feedback">
+            <p *ngIf="formularioLogin.controls['rut'].errors?.required && formularioLogin.controls['rut'].touched">
+                Campo obligatorio
+            </p>
+            <p *ngIf="formularioLogin.controls['rut'].errors?.rutValido && formularioLogin.controls['rut'].touched">
+                Run inválido
+            </p>
+        </small>
+    </div>
+    <div class="form-group">
+        <label class="form-label d-flex justify-content-between align-items-end">
+            <div>Clave</div>
+        </label>
+        <input formControlName="password" (keydown.enter)="login()" name="password" type="password" class="form-control"
+            [ngClass]="{'is-invalid': formularioLogin.controls['password'].touched && formularioLogin.controls['password'].invalid}">
+        <small class="invalid-feedback" *ngIf="formularioLogin.controls['password'].touched">
+            <p *ngIf="formularioLogin.controls['password'].errors?.required">
+                Campo obligatorio
+            </p>
+        </small>
+    </div>
+    <div class="d-flex justify-content-center align-items-center m-0">
+
+        <button type="button" class="btn btn-primary" (click)="login()">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
+            <app-text-btn [loading]="loading" [pogressbar]="true" textLoaded="Ingresar" textLoading="Ingresando">
+            </app-text-btn>
+        </button>
+    </div>
+</form>
+<!-- / Form -->

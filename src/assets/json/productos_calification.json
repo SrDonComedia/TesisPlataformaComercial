@@ -1,0 +1,103 @@
+{
+    "califications": [
+        {
+            "Id": "0",
+            "name": "Miguel Parrón vazquez",
+            "user_calificator_id": "0",
+            "product_calificated_id": "0",
+            "calification": "3",
+            "tittle": "Ni bueno ni malo",
+            "comment": "La planta del pie se siente demasiado incomoda, pero me gustan mucho el estilo"
+        },
+        {
+            "Id": "1",
+            "name": "Miguel Zegovia Duran",
+            "user_calificator_id": "1",
+            "product_calificated_id": "0",
+            "calification": "4",
+            "tittle": "Me gustaron",
+            "comment": "Comodas en todo sentido, además de bonitas y frescas"
+        },
+        {
+            "Id": "2",
+            "name": "Trinidad Elmeida Granhe",
+            "user_calificator_id": "2",
+            "product_calificated_id": "0",
+            "calification": "5",
+            "tittle": "Excelente calidad",
+            "comment": "Me parece un producto genial, me encantaron, ojalá siga trayendo más productos asi"
+        },
+        {
+            "Id": "3",
+            "name": "Daniel de la Cruz",
+            "user_calificator_id": "3",
+            "product_calificated_id": "1",
+            "calification": "2",
+            "tittle": "Frio",
+            "comment": "La comida estaba rica, pero estaba fria cuando la recibí"
+        },
+        {
+            "Id": "4",
+            "name": "Erica Jackson",
+            "user_calificator_id": "4",
+            "product_calificated_id": "1",
+            "calification": "3",
+            "tittle": "Estuvo bueno",
+            "comment": "Buena comida y justa, pero he probado mejores"
+        },
+        {
+            "Id": "5",
+            "name": "Marlen Presley",
+            "user_calificator_id": "5",
+            "product_calificated_id": "2",
+            "calification": "3",
+            "tittle": "Detalle no mencionado",
+            "comment": "El telefono se pone un poco lento, pero fuera de eso esta genial"
+        },
+        {
+            "Id": "6",
+            "name": "Miguel Parrón vazquez",
+            "user_calificator_id": "0",
+            "product_calificated_id": "2",
+            "calification": "5",
+            "tittle": "Me encantó",
+            "comment": "Barato y bueno, muchas gracias por el telefono"
+        },
+        {
+            "Id": "7",
+            "name": "Miguel Parrón vazquez",
+            "user_calificator_id": "0",
+            "product_calificated_id": "2",
+            "calification": "4",
+            "tittle": "Buena calidad",
+            "comment": "Para el precio esta excelente aun que sea un poco alto"
+        },
+        {
+            "Id": "8",
+            "name": "Miguel Zegovia Duran",
+            "user_calificator_id": "1",
+            "product_calificated_id": "3",
+            "calification": "5",
+            "tittle": "Confiable",
+            "comment": "La pasamos excelente en el partido, recomendado y confiable"
+        },
+        {
+            "Id": "9",
+            "name": "Trinidad Elmeida Granhe",
+            "user_calificator_id": "2",
+            "product_calificated_id": "4",
+            "calification": "5",
+            "tittle": "Buena calidad",
+            "comment": "Me encanto el delineado que me dejo, uno de los mejores que he probado"
+        },
+        {
+            "Id": "10",
+            "name": "Marlen Presley",
+            "user_calificator_id": "5",
+            "product_calificated_id": "5",
+            "calification": "2",
+            "tittle": "Me duele todo",
+            "comment": "Debería de partir de una manera más suave cuando hay gente que se esta recien adaptando"
+        }
+    ]
+}

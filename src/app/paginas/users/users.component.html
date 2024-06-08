@@ -1,0 +1,88 @@
+<div style="width: 100%; display: flex;flex-direction: row;">
+    <div class="col-8" style="width: 100%;display: flex;flex-direction: column;padding: 10px;">
+        <div style="width: 100%; height: 50%; display: flex; justify-content: center; align-items: center;">
+            <p
+                style="color: #202020;margin: 0;flex-grow: 1;text-align: center;height: 100%;display: flex;align-items: center;justify-content: center;font: 400 4vw Roboto, 'Helvetica Neue', sans-serif;margin-bottom: 10px;">
+                {{usuarioArray["name"]}}</p>
+        </div>
+
+        <div style="width: 100%; height: 50%; display: flex;flex-direction: row;">
+            <div class="col-6"
+                style="height: 100%; display: flex;flex-direction: row;justify-content:space-evenly;align-items: center;">
+                <a href=""><i class="fab fa-facebook" style="font-size: 4vw;color: rgb(0, 146, 251);"></i></a>
+                <a href=""><i class="fab fa-twitter" style="font-size: 4vw;color: rgb(0, 146, 251);"></i></a>
+                <a href=""><i class="fab fa-instagram" style="font-size: 4vw;color: rgb(0, 146, 251);"></i></a>
+            </div>
+            <div class="col-6"
+                style="height: 100%; display: flex;flex-direction: column;align-items: center;justify-content: center;">
+                <div style="display: flex;flex-direction: row;">
+                    <!-- Utilizando un bucle para las estrellas -->
+                    <ng-container *ngFor="let star of stars">
+                        <mat-icon
+                            style="color: rgb(14, 235, 18); height: auto; width: auto; font-size: 2vw;">star{{star}}</mat-icon>
+                    </ng-container>
+                </div>
+                <p
+                    style="font-size: 2vw; color: #202020; margin: 0; text-align: center; display: flex; align-items: center; justify-content: center;">
+                    {{usuarioArray["calification"]}}
+                </p>
+            </div>
+
+        </div>
+
+        <div
+            style="width: 100%;display: flex;flex-direction: column;font: 400 1rem Roboto, 'Helvetica Neue', sans-serif;margin-top: 10px;">
+            <mat-form-field class="example-full-width" disabled>
+                <mat-label>Descripción</mat-label>
+                <textarea matInput disabled style="color: #202020;">{{usuarioArray["description"]}}</textarea>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="col-4" style="padding: 10px; display: flex; align-items: center; justify-content: center;">
+        <img [src]="'../../assets/img/avatars/'+usuarioArray['id']+'.png'" alt="Photo of a Shiba Inu"
+            style="max-width: 100%; max-height: 100%; width: auto; height: auto; border-radius: 50%;">
+    </div>
+
+</div>
+<div>
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Productos y Servicios">
+            <div style="display: grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr));gap: 24px;margin-top: 10px;">
+                <ng-container *ngFor="let producto of array_productos?.productos; let i = index">
+                    <mat-card *ngIf="producto.user_id == usuarioArray['id']" matRipple>
+                        <img (click)="redirectToProductsPage(producto)" mat-card-image [src]="'../../../assets/img/uikit/'+producto.image+'.jpg'"
+                            alt="Description of the image">
+                        <mat-card-content>
+                            <mat-card-title>{{producto.name}}</mat-card-title>
+                            <p>
+                                {{producto.description}}
+                            </p>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-container>
+            </div>
+        </mat-tab>
+        <mat-tab label="Comentarios" style="padding: 20px 30px 20px 30px;">
+            <mat-accordion> 
+                <ng-container *ngFor="let calification of array_calificationsUser?.califications; let i = index">
+                    <ng-container *ngIf="calification.user_calificated_id == usuarioArray['id']">
+                        <mat-expansion-panel hideToggle>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    {{calification.name}}
+                                </mat-panel-title>
+                                <mat-panel-description>
+                                    {{calification.tittle}}
+                                    <ng-container *ngFor="let star of stars_productos[i]">
+                                        <mat-icon style="color: rgb(14, 235, 18); height: auto; width: auto; font-size: 2vw;">star{{star}}</mat-icon>
+                                    </ng-container>
+                                </mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <p>{{calification.comment}}</p>
+                        </mat-expansion-panel>
+                    </ng-container>
+                </ng-container>
+            </mat-accordion>
+        </mat-tab>
+    </mat-tab-group>
+</div>

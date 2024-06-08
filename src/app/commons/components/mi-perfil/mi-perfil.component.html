@@ -1,0 +1,35 @@
+<div class="modal-header my-0 py-0">
+    <h2 class="modal-title ml-auto mr-auto">Mi perfil</h2>
+</div>
+<div class="modal-body">
+    <div class="row">
+
+        <div class="col-lg-2"></div>
+        <div class="col-sm-12 col-lg-8">
+            <mat-form-field style="width:100%;">
+                <mat-label>Nombre</mat-label>
+                <input matInput [formControl]="formPerfil.controls.nombre" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-2"></div>
+        <div class="col-12 col-lg-8">
+            <mat-form-field style="width:100%;">
+                <mat-label>Correo Institucional</mat-label>
+                <input matInput [formControl]="formPerfil.controls.correo" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-2"></div>
+        <div class="col-12 col-lg-8">
+            <mat-form-field style="width:100%;">
+                <mat-label>Rut</mat-label>
+                <input matInput [formControl]="formPerfil.controls.rut" required>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-2"></div>
+
+    </div>
+</div>
